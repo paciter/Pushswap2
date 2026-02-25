@@ -1,5 +1,5 @@
 #include "push_swap.h"
-
+/* pareil ici je t ai  deja dit*/
 int	is_number(char *str)
 {
 	int	i;

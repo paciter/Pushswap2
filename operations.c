@@ -1,5 +1,5 @@
 #include "push_swap.h"
-
+ /*ici pareil encore les operations */
 void	sa(t_stack **a)
 {
 	t_stack	*first;

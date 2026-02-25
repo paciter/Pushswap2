@@ -1,5 +1,5 @@
 #include "push_swap.h"
-
+ /*ce que je t ai deja expliquer sur l autre git les fonctions disent ce qu elles font et print_stack_a c est pour voir si tout se trie bien */
 t_stack	*parse_numbers(int argc, char **argv, int start_index)
 {
 	t_stack	*stack_a;

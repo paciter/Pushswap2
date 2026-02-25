@@ -1,4 +1,9 @@
 #include "push_swap.h"
+/*dcp ici viiens le plus "complique" donc pour l algo on cherrche le pluss petit de la stack a qu om va push dans b  donc on creer la fonction find_min_pos pour savoir ou il se trouve*/
+
+/* la premierre fonction se deroule de maniere qu on deroule la stack tant que toute la liste a pas etait faites , on ert la pour trouveer le plus petit caracteres,
+ on initialise le min avec la valeur du  premier noeud et la position a 0 ensuiite on parcours la pile  si on croise une valeur 
+  un noeud plus petite que celle de base alors on la change par la plus petite et par sa position, on defile toute la liste avec ceette logique */
 
 int	find_min_pos(t_stack *stack)
 {
@@ -23,13 +28,14 @@ int	find_min_pos(t_stack *stack)
 	}
 	return (min_pos);
 }
-
+/*car il y a aussi une seul maniere de trier pour 2 jsp si tu me comprends tu me dis en dm */
 void	sort_two(t_stack **a)
 {
 	if ((*a)->value > (*a)->next->value)
 		sa(a);
 }
-
+/* on utilise sort_three carr il ya qu  une seule maniere de trierr quand il en reste 3 je sais pas i tu m;as compris 
+((*a) sommet de la pile) dcp (*a)next -> value = deuxieme pos et apres 3ieme pos (*a)next ->next ->value  */
 void	sort_three(t_stack **a)
 {
 	int	first;
@@ -56,7 +62,7 @@ void	sort_three(t_stack **a)
 	else if (first < second && second > third && first > third)
 		rra(a);
 }
-
+/* pour push dans la stack b on doit dabord push le min en haut de a donc on fait une fonction pour laa remonter au dedbut de la liste */
 static void	rotate_min_to_top(t_stack **a, int min_pos, int size)
 {
 	if (min_pos <= size / 2)
@@ -76,7 +82,7 @@ static void	rotate_min_to_top(t_stack **a, int min_pos, int size)
 		}
 	}
 }
-
+/*la fonction qu on va appeler dans le main pour execeuter l algo */
 void	simple_sort(t_stack **a, t_stack **b)
 {
 	int	size;

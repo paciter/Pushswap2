@@ -1,9 +1,9 @@
 #include "push_swap.h"
-
+/*fonction utiles un peu paartout */
 t_stack	*stack_new(int value)
 {
 	t_stack	*new;
-
+	int i = 0;
 	new = (t_stack *)malloc(sizeof(t_stack));
 	if (!new)
 		return (NULL);

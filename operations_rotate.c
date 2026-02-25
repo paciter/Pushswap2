@@ -1,5 +1,5 @@
 #include "push_swap.h"
-
+ /*Bon ici operations comme tu sais dcp j ai fait double lsiite chaine pour etre comme toi je pensee on utilisera ce que tu as fais elles sont plus simples et plus comprehensible boss*/
 void	ra(t_stack **a)
 {
 	t_stack	*first;
